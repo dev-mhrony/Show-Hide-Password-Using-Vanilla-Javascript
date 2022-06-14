@@ -31,4 +31,26 @@ body{
     background: transparent;
     padding: 0 20px;
     font-size: 18px;
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 8px;
+    box-shadow: -4px -4px 10px rgba(255, 255, 255, 1);
+        inset: 4px 4px 10px rgba(0,0,0,0.05);
+        inset: -4px -4px 10px rgba(255, 255, 255, 1);
+        inset: 4px 4px 10px rgba(0,0,0,0.05);   
+}
+
+.inputBox input::placeholder{
+    color: #ccc;
+}
+
+#toggle{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background: url(02.png);
+    background-size: cover;
 }

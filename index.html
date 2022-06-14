@@ -13,9 +13,25 @@
 <body>
     <div class="inputBox">
         <input type="password" name="" placeholder="Enter Password" id="password">
-        <div id="toggle"></div>
+        <div id="toggle" onclick="showHide();"></div>
     </div>
 
+
+    <script>
+        const password =document.getElementById('password');
+        const toggle = document.getElementById('toggle');
+
+        function showHide(){
+            if(password.type === 'password'){
+                password.setAttribute('type','text');
+                toggle.classList.add('hide')
+            }
+            else{
+                password.setAttribute('type','password');
+                toggle.classList.remove('hide')
+            }
+        }
+    </script>
     
 </body>
 </html>
