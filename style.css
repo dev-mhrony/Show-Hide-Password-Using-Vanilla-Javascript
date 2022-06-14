@@ -53,4 +53,10 @@ body{
     height: 30px;
     background: url(02.png);
     background-size: cover;
+    cursor: pointer;
+}
+
+#toggle.hide{
+    background: url(03.jpg);
+    background-size: cover;
 }
